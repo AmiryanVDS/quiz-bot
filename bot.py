@@ -194,11 +194,12 @@ if __name__ == '__main__':
         print("\n👋 Бот остановлен пользователем.")
 
 
-# --- ЗАПУСК БОТА И ВЕБ-СЕРВЕРА ---
+# --- ЗАПУСК: СНАЧАЛА ВЕБ, ПОТОМ БОТ ---
 
 import threading
 from flask import Flask
 import os
+import time
 
 # Создаём Flask-приложение
 app = Flask(__name__)
@@ -213,31 +214,38 @@ def health():
 
 def run_web():
     port = int(os.getenv('PORT', 10000))
-    print(f"🌍 Запускаю веб-сервер на порту {port}...")
-    app.run(host='0.0.0.0', port=port)
+    print(f"🌍 Веб-сервер запущен на порту {port}...")
+    app.run(host='0.0.0.0', port=port, threaded=True)
 
 if __name__ == '__main__':
-    # Сначала запускаем веб-сервер в фоне
+    # 🔥 Сначала запускаем веб-сервер
     web_thread = threading.Thread(target=run_web, daemon=True)
     web_thread.start()
-    time.sleep(2)  # Даём серверу время запуститься
+    
+    # Даём серверу время инициализироваться
+    time.sleep(3)
 
-    # Потом запускаем бота
+    # Проверим — жив ли сервер
+    print("✅ Веб-интерфейс для Render запущен. Бот стартует...")
+
+    # Теперь запускаем бота
+
     print("🤖 Бот запущен. Рассылка — каждый понедельник в 10:00.")
-
-    print("📤 Отправляю первое сообщение СРАЗУ...")
+    
+    # Отправка СРАЗУ при запуске (опционально)
+    print("📤 Отправляю первое сообщение...")
     try:
         asyncio.run(send_quiz_schedule())
     except Exception as e:
         print(f"❌ Ошибка при первой отправке: {e}")
 
-    print("⏰ Ждём следующую отправку — в понедельник в 10:00...")
+    # Запускаем планировщик
+    print("⏰ Планировщик запущен. Ждём понедельника в 10:00...")
     try:
-        # Запускаем планировщик
-        import threading as th
-        th.Thread(target=run_scheduler, daemon=True).start()
+        scheduler_thread = threading.Thread(target=run_scheduler, daemon=True)
+        scheduler_thread.start()
         
-        # Главный цикл — чтобы бот не завершился
+        # Главный цикл — чтобы процесс не завершился
         while True:
             time.sleep(1)
     except KeyboardInterrupt:

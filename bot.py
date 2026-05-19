@@ -1,47 +1,42 @@
+# -*- coding: utf-8 -*-
+
 import os
 import asyncio
-import requests
-from bs4 import BeautifulSoup
-from aiogram import Bot
-import schedule
-import time
 import logging
+import requests
 import urllib3
-import threading
+
 from flask import Flask
 from dotenv import load_dotenv
+from bs4 import BeautifulSoup
+from aiogram import Bot
 
 # Отключаем предупреждения о небезопасном соединении
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# Загружаем .env, если файл существует — нужно для локального запуска
+# Загружаем .env для локального запуска
 if os.path.exists(".env"):
     load_dotenv()
 
-# Настройка логирования
+# Логирование
 logging.basicConfig(level=logging.INFO)
 
-# Получаем токен и ID из переменных окружения
+# Переменные окружения
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-if BOT_TOKEN is None:
-    raise ValueError("❌ Не найдена переменная окружения BOT_TOKEN. Проверь .env или Environment Variables в Render")
-
 CHAT_ID = os.getenv("CHAT_ID")
-if CHAT_ID is None:
-    raise ValueError("❌ Не найдена переменная окружения CHAT_ID. Проверь .env или Environment Variables в Render")
+
+if not BOT_TOKEN:
+    raise ValueError("❌ Не найдена переменная окружения BOT_TOKEN")
+
+if not CHAT_ID:
+    raise ValueError("❌ Не найдена переменная окружения CHAT_ID")
 
 try:
     CHAT_ID = int(CHAT_ID)
 except ValueError:
     raise ValueError("❌ CHAT_ID должен быть числом, например -1001234567890")
 
-if not BOT_TOKEN.strip():
-    raise ValueError("❌ BOT_TOKEN пустой")
-
-# Инициализация бота
-bot = Bot(token=BOT_TOKEN)
-
-# Flask-приложение для Render
+# Инициализация Flask
 app = Flask(__name__)
 
 
@@ -55,12 +50,32 @@ def health():
     return "OK", 200
 
 
+@app.route("/send")
+def send_endpoint():
+    """
+    Endpoint для cron-job.org.
+    Cron-job должен дергать именно этот URL:
+    https://quiz-bot-yf88.onrender.com/send
+
+    Важно: возвращаем только короткий ответ OK,
+    чтобы не было ошибки 'вывод слишком большой'.
+    """
+    try:
+        asyncio.run(send_quiz_schedule())
+        return "OK", 200
+    except Exception:
+        logging.exception("❌ Ошибка при запуске рассылки через /send")
+        return "ERROR", 500
+
+
 def parse_quiz_schedule():
     try:
         headers = {
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                          "AppleWebKit/537.36 (KHTML, like Gecko) "
-                          "Chrome/128.0.0.0 Safari/537.36",
+            "User-Agent": (
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/128.0.0.0 Safari/537.36"
+            ),
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
             "Accept-Language": "ru,en;q=0.9",
             "Accept-Encoding": "gzip, deflate",
@@ -68,7 +83,13 @@ def parse_quiz_schedule():
         }
 
         url = "https://findquiz.ru/category/sport"
-        response = requests.get(url, headers=headers, timeout=10, verify=False)
+
+        response = requests.get(
+            url,
+            headers=headers,
+            timeout=20,
+            verify=False,
+        )
         response.raise_for_status()
         response.encoding = "utf-8"
 
@@ -77,11 +98,6 @@ def parse_quiz_schedule():
 
         if not quiz_items:
             return "❌ На сайте не найдено ни одного квиза."
-
-        result = "🗓 <b>Расписание спортивных квизов</b>\n\n"
-
-        count = 0
-        MAX_QUIZZES = 10
 
         search_words = [
             "футбол",
@@ -94,6 +110,10 @@ def parse_quiz_schedule():
             "чемпионат",
             "турнир",
         ]
+
+        result = "🗓 <b>Расписание спортивных квизов</b>\n\n"
+        count = 0
+        max_quizzes = 10
 
         for item in quiz_items:
             # Название
@@ -116,9 +136,8 @@ def parse_quiz_schedule():
                 day_span = date_box.find("span", class_="date-small-date")
                 if day_span:
                     day_text = day_span.get_text(strip=True)
-                    day = "".join([c for c in day_text if c.isdigit()])
-                    if not day:
-                        day = "??"
+                    day_digits = "".join(c for c in day_text if c.isdigit())
+                    day = day_digits if day_digits else "?"
 
                 month_span = date_box.find("span", class_="date-small-month1")
                 if month_span:
@@ -126,29 +145,36 @@ def parse_quiz_schedule():
 
             # Время
             time_text = "20:00"
-            time_p_list = item.find_all("p", class_="desc")
+            desc_list = item.find_all("p", class_="desc")
 
-            for p in time_p_list:
-                if "Начало игры" in p.get_text():
+            for p in desc_list:
+                p_text = p.get_text(" ", strip=True)
+
+                if "Начало игры" in p_text:
                     time_span = p.find("span", class_="info-text")
                     if time_span:
-                        t = time_span.get_text(strip=True)
-                        t = t.split()[0]
-                        if ":" in t:
-                            time_text = t
+                        parsed_time = time_span.get_text(strip=True).split()[0]
+                        if ":" in parsed_time:
+                            time_text = parsed_time
                     break
 
             formatted_date = f"{day} {month}, {time_text}"
 
             # Место
             location_link = item.find("a", class_="location-href")
-            location = location_link.get_text(strip=True) if location_link else "Место не указано"
+            location = (
+                location_link.get_text(strip=True)
+                if location_link
+                else "Место не указано"
+            )
 
             # Цена
             price_text = "Цена не указана"
 
-            for p in time_p_list:
-                if "Цена" in p.get_text() or "руб" in p.get_text():
+            for p in desc_list:
+                p_text = p.get_text(" ", strip=True)
+
+                if "Цена" in p_text or "руб" in p_text:
                     price_span = p.find("span", class_="info-text")
                     if price_span:
                         price_text = price_span.get_text(strip=True)
@@ -156,6 +182,7 @@ def parse_quiz_schedule():
 
             # Фильтр по спортивной теме
             search_text = f"{name} {org} {location}".lower()
+
             if not any(word in search_text for word in search_words):
                 continue
 
@@ -167,7 +194,7 @@ def parse_quiz_schedule():
             result += f"📍 {location}\n"
             result += f"💰 {price_text}\n\n"
 
-            if count >= MAX_QUIZZES:
+            if count >= max_quizzes:
                 break
 
         if count == 0:
@@ -176,12 +203,19 @@ def parse_quiz_schedule():
         result += "⚽ Готов к спортивной баталии?"
         return result
 
+    except requests.RequestException as e:
+        logging.exception("Ошибка запроса к findquiz.ru")
+        return f"❌ Ошибка при подключении к сайту: {e}"
+
     except Exception as e:
-        return f"❌ Ошибка при парсинге: {str(e)}"
+        logging.exception("Ошибка при парсинге расписания")
+        return f"❌ Ошибка при парсинге: {e}"
 
 
 async def send_quiz_schedule():
     message = parse_quiz_schedule()
+
+    bot = Bot(token=BOT_TOKEN)
 
     try:
         await bot.send_message(
@@ -189,44 +223,22 @@ async def send_quiz_schedule():
             text=message,
             parse_mode="HTML",
         )
-        print("✅ Сообщение успешно отправлено в Telegram!")
-    except Exception as e:
-        print(f"❌ Не удалось отправить сообщение: {e}")
+        logging.info("✅ Сообщение успешно отправлено в Telegram")
 
+    except Exception:
+        logging.exception("❌ Не удалось отправить сообщение в Telegram")
+        raise
 
-def run_scheduler():
-    # Отправка каждый понедельник в 10:00
-    schedule.every().monday.at("10:00").do(lambda: asyncio.run(send_quiz_schedule()))
-
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
-
-
-def start_bot():
-    time.sleep(5)
-    print("🤖 Бот запущен. Рассылка — каждый понедельник в 10:00.")
-
-    # Если хочешь, чтобы бот отправлял сообщение сразу при каждом запуске Render,
-    # раскомментируй блок ниже.
-    #
-    # print("📤 Отправляю первое сообщение СРАЗУ...")
-    # try:
-    #     asyncio.run(send_quiz_schedule())
-    # except Exception as e:
-    #     print(f"❌ Ошибка при первой отправке: {e}")
-
-    print("⏰ Планировщик запущен...")
-    run_scheduler()
+    finally:
+        await bot.session.close()
 
 
 if __name__ == "__main__":
-    # Запускаем бота в отдельном потоке
-    bot_thread = threading.Thread(target=start_bot, daemon=True)
-    bot_thread.start()
-
-    # Основной процесс — Flask-сервер для Render
     port = int(os.getenv("PORT", 10000))
-    print(f"🌍 Запускаем веб-сервер на порту {port}")
+    logging.info(f"🌍 Запускаем веб-сервер на порту {port}")
 
-    app.run(host="0.0.0.0", port=port, threaded=True)
+    app.run(
+        host="0.0.0.0",
+        port=port,
+        threaded=True,
+    )

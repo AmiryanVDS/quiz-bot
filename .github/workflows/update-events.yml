@@ -1,0 +1,46 @@
+name: Update quiz events
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - update_events.py
+      - .github/workflows/update-events.yml
+  schedule:
+    # 09:45 Moscow time (UTC+3), every day.
+    - cron: "45 6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-quiz-events
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install parser dependencies
+        run: pip install requests==2.31.0 beautifulsoup4==4.12.2
+
+      - name: Fetch FindQuiz schedule
+        run: python update_events.py
+
+      - name: Commit updated JSON
+        run: |
+          if git diff --quiet -- events.json && git ls-files --error-unmatch events.json >/dev/null 2>&1; then
+            echo "events.json did not change"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add events.json
+          git commit -m "Update quiz events"
+          git push

@@ -1,21 +1,9 @@
 {
   "ok": true,
   "source": "https://findquiz.ru/category/sport",
-  "generated_at": "2026-09-28T07:56:17.039444+00:00",
+  "generated_at": "2026-09-29T13:19:59.885223+00:00",
   "count": 9,
   "events": [
-    {
-      "name": "Футбол: УГАДАЙКА ЛАЙТ",
-      "org": "Смузи",
-      "event_date": "2026-09-28",
-      "day": "28",
-      "weekday": "ПН",
-      "month": "сентября",
-      "time": "20:00",
-      "location": "Цурцум кафе (zurzum cafe)",
-      "price": "800 руб./чел.",
-      "event_url": "https://findquiz.ru/event/smuzi/347332-futbol-ugadayka-layt"
-    },
     {
       "name": "Видеоигры",
       "org": "BUBO-КВИЗ",
@@ -99,6 +87,18 @@
       "location": "Liberty",
       "price": "900 руб./чел.",
       "event_url": "https://findquiz.ru/event/brainboy/350226-futbol"
+    },
+    {
+      "name": "Футбол",
+      "org": "Смузи",
+      "event_date": "2026-10-26",
+      "day": "26",
+      "weekday": "ПН",
+      "month": "октября",
+      "time": "20:00",
+      "location": "Цурцум кафе (zurzum cafe)",
+      "price": "800 руб./чел.",
+      "event_url": "https://findquiz.ru/event/smuzi/351761-futbol"
     },
     {
       "name": "Классический тур",

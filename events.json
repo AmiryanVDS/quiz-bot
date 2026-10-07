@@ -1,21 +1,9 @@
 {
   "ok": true,
   "source": "https://findquiz.ru/category/sport",
-  "generated_at": "2026-10-06T13:37:49.974270+00:00",
-  "count": 8,
+  "generated_at": "2026-10-07T13:56:42.219675+00:00",
+  "count": 7,
   "events": [
-    {
-      "name": "Спорт",
-      "org": "Brainboy",
-      "event_date": "2026-10-06",
-      "day": "06",
-      "weekday": "ВТ",
-      "month": "октября",
-      "time": "20:00",
-      "location": "Liberty",
-      "price": "900 руб./чел.",
-      "event_url": "https://findquiz.ru/event/brainboy/350225-sport"
-    },
     {
       "name": "Лига Крокозавра",
       "org": "ПроСпорт",

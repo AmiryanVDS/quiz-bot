@@ -1,8 +1,8 @@
 {
   "ok": true,
   "source": "https://findquiz.ru/category/sport",
-  "generated_at": "2026-10-08T14:02:30.452163+00:00",
-  "count": 7,
+  "generated_at": "2026-10-09T13:47:12.549172+00:00",
+  "count": 8,
   "events": [
     {
       "name": "Лига Крокозавра",
@@ -87,6 +87,18 @@
       "location": "0,5 промилле",
       "price": "700 руб./чел.",
       "event_url": "https://findquiz.ru/event/udar-golovoj-msk/349357-klassicheskiy-tur"
+    },
+    {
+      "name": "Игра #1021.2",
+      "org": "Squiz",
+      "event_date": "2026-11-03",
+      "day": "03",
+      "weekday": "ВТ",
+      "month": "ноября",
+      "time": "20:00",
+      "location": "KETCH UP",
+      "price": "790 руб./чел.",
+      "event_url": "https://findquiz.ru/event/squiz/353035-igra-1021-2"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "ok": true,
   "source": "https://findquiz.ru/category/sport",
-  "generated_at": "2026-10-09T13:47:12.549172+00:00",
-  "count": 8,
+  "generated_at": "2026-10-10T13:03:35.123407+00:00",
+  "count": 9,
   "events": [
     {
       "name": "Лига Крокозавра",
@@ -99,6 +99,18 @@
       "location": "KETCH UP",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353035-igra-1021-2"
+    },
+    {
+      "name": "Игра #1024.1",
+      "org": "Squiz",
+      "event_date": "2026-11-08",
+      "day": "08",
+      "weekday": "ВС",
+      "month": "ноября",
+      "time": "16:00",
+      "location": "KETCH UP",
+      "price": "790 руб./чел.",
+      "event_url": "https://findquiz.ru/event/squiz/353039-igra-1024-1"
     }
   ]
 }

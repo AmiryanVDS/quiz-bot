@@ -1,8 +1,8 @@
 {
   "ok": true,
   "source": "https://findquiz.ru/category/sport",
-  "generated_at": "2026-10-13T14:35:18.254693+00:00",
-  "count": 10,
+  "generated_at": "2026-10-14T12:23:54.236332+00:00",
+  "count": 11,
   "events": [
     {
       "name": "Классический тур",
@@ -123,6 +123,18 @@
       "location": "Coin hall",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353234-igra-1023-3"
+    },
+    {
+      "name": "Игра #1024.3",
+      "org": "Squiz",
+      "event_date": "2026-11-14",
+      "day": "14",
+      "weekday": "СБ",
+      "month": "ноября",
+      "time": "16:00",
+      "location": "Coin hall",
+      "price": "790 руб./чел.",
+      "event_url": "https://findquiz.ru/event/squiz/353338-igra-1024-3"
     }
   ]
 }

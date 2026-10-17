@@ -1,8 +1,8 @@
 {
   "ok": true,
   "source": "https://findquiz.ru/category/sport",
-  "generated_at": "2026-10-16T11:55:08.011767+00:00",
-  "count": 12,
+  "generated_at": "2026-10-17T11:10:47.874884+00:00",
+  "count": 14,
   "events": [
     {
       "name": "Футбол",
@@ -135,6 +135,30 @@
       "location": "Coin hall",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353338-igra-1024-3"
+    },
+    {
+      "name": "Игра #1026.1",
+      "org": "Squiz",
+      "event_date": "2026-11-17",
+      "day": "17",
+      "weekday": "ВТ",
+      "month": "ноября",
+      "time": "20:00",
+      "location": "Лига Пап",
+      "price": "790 руб./чел.",
+      "event_url": "https://findquiz.ru/event/squiz/353518-igra-1026-1"
+    },
+    {
+      "name": "Видеоигры (80 вопросов)",
+      "org": "Квизоварня",
+      "event_date": "2026-11-25",
+      "day": "25",
+      "weekday": "СР",
+      "month": "ноября",
+      "time": "20:00",
+      "location": "Буква Ю (ex. ЗИЧ)",
+      "price": "800 руб./чел.",
+      "event_url": "https://findquiz.ru/event/quizovarnya/353484-videoigry-80-voprosov"
     },
     {
       "name": "Классический тур",

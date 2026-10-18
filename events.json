@@ -1,8 +1,8 @@
 {
   "ok": true,
   "source": "https://findquiz.ru/category/sport",
-  "generated_at": "2026-10-17T11:10:47.874884+00:00",
-  "count": 14,
+  "generated_at": "2026-10-18T11:43:17.883264+00:00",
+  "count": 15,
   "events": [
     {
       "name": "Футбол",
@@ -147,6 +147,18 @@
       "location": "Лига Пап",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353518-igra-1026-1"
+    },
+    {
+      "name": "Игра #1025.2",
+      "org": "Squiz",
+      "event_date": "2026-11-18",
+      "day": "18",
+      "weekday": "СР",
+      "month": "ноября",
+      "time": "20:00",
+      "location": "Summer Punch",
+      "price": "790 руб./чел.",
+      "event_url": "https://findquiz.ru/event/squiz/353607-igra-1025-2"
     },
     {
       "name": "Видеоигры (80 вопросов)",

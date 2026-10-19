@@ -1,8 +1,8 @@
 {
   "ok": true,
   "source": "https://findquiz.ru/category/sport",
-  "generated_at": "2026-10-18T11:43:17.883264+00:00",
-  "count": 15,
+  "generated_at": "2026-10-19T13:57:42.799463+00:00",
+  "count": 16,
   "events": [
     {
       "name": "Футбол",
@@ -159,6 +159,18 @@
       "location": "Summer Punch",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353607-igra-1025-2"
+    },
+    {
+      "name": "Игра #1026.2",
+      "org": "Squiz",
+      "event_date": "2026-11-19",
+      "day": "19",
+      "weekday": "ЧТ",
+      "month": "ноября",
+      "time": "20:00",
+      "location": "Золберг",
+      "price": "790 руб./чел.",
+      "event_url": "https://findquiz.ru/event/squiz/353672-igra-1026-2"
     },
     {
       "name": "Видеоигры (80 вопросов)",

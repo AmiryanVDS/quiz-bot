@@ -1,8 +1,8 @@
 {
   "ok": true,
   "source": "https://findquiz.ru/category/sport",
-  "generated_at": "2026-10-19T13:57:42.799463+00:00",
-  "count": 16,
+  "generated_at": "2026-10-20T12:12:57.334340+00:00",
+  "count": 17,
   "events": [
     {
       "name": "Футбол",
@@ -171,6 +171,18 @@
       "location": "Золберг",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353672-igra-1026-2"
+    },
+    {
+      "name": "Игра #1025.3",
+      "org": "Squiz",
+      "event_date": "2026-11-20",
+      "day": "20",
+      "weekday": "ПТ",
+      "month": "ноября",
+      "time": "19:00",
+      "location": "Coin hall",
+      "price": "790 руб./чел.",
+      "event_url": "https://findquiz.ru/event/squiz/353827-igra-1025-3"
     },
     {
       "name": "Видеоигры (80 вопросов)",

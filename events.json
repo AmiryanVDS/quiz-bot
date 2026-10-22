@@ -1,8 +1,8 @@
 {
   "ok": true,
   "source": "https://findquiz.ru/category/sport",
-  "generated_at": "2026-10-21T12:26:01.884782+00:00",
-  "count": 16,
+  "generated_at": "2026-10-22T12:27:13.917596+00:00",
+  "count": 18,
   "events": [
     {
       "name": "Футбол",
@@ -51,6 +51,18 @@
       "location": "KETCH UP",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353035-igra-1021-2"
+    },
+    {
+      "name": "КМС (ПОВТОР ОТ 12 ОКТЯБРЯ)",
+      "org": "BUBO-КВИЗ",
+      "event_date": "2026-11-06",
+      "day": "06",
+      "weekday": "ПТ",
+      "month": "ноября",
+      "time": "20:00",
+      "location": "OldSchool Pub Маяковская",
+      "price": "800 руб./чел.",
+      "event_url": "https://findquiz.ru/event/bubo-quiz-msk/354313-kms-povtor-ot-12-oktyabrya"
     },
     {
       "name": "Игра #1024.1",
@@ -171,6 +183,18 @@
       "location": "Coin hall",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353827-igra-1025-3"
+    },
+    {
+      "name": "Игра #1027.1",
+      "org": "Squiz",
+      "event_date": "2026-11-22",
+      "day": "22",
+      "weekday": "ВС",
+      "month": "ноября",
+      "time": "17:00",
+      "location": "Золберг",
+      "price": "790 руб./чел.",
+      "event_url": "https://findquiz.ru/event/squiz/354448-igra-1027-1"
     },
     {
       "name": "Видеоигры (80 вопросов)",

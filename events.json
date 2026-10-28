@@ -1,8 +1,8 @@
 {
   "ok": true,
   "source": "https://findquiz.ru/category/sport",
-  "generated_at": "2026-10-27T12:40:43.414723+00:00",
-  "count": 24,
+  "generated_at": "2026-10-28T13:32:43.934091+00:00",
+  "count": 27,
   "events": [
     {
       "name": "Классический тур",
@@ -151,6 +151,18 @@
     {
       "name": "Игра #1026.1",
       "org": "Squiz",
+      "event_date": "2026-11-16",
+      "day": "16",
+      "weekday": "ПН",
+      "month": "ноября",
+      "time": "20:00",
+      "location": "KETCH UP",
+      "price": "790 руб./чел.",
+      "event_url": "https://findquiz.ru/event/squiz/355747-igra-1026-1"
+    },
+    {
+      "name": "Игра #1025.2",
+      "org": "Squiz",
       "event_date": "2026-11-17",
       "day": "17",
       "weekday": "ВТ",
@@ -158,10 +170,10 @@
       "time": "20:00",
       "location": "Лига Пап",
       "price": "790 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/353518-igra-1026-1"
+      "event_url": "https://findquiz.ru/event/squiz/353518-igra-1025-2"
     },
     {
-      "name": "Игра #1025.2",
+      "name": "Игра #1026.2",
       "org": "Squiz",
       "event_date": "2026-11-18",
       "day": "18",
@@ -170,10 +182,10 @@
       "time": "20:00",
       "location": "Summer Punch",
       "price": "790 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/353607-igra-1025-2"
+      "event_url": "https://findquiz.ru/event/squiz/353607-igra-1026-2"
     },
     {
-      "name": "Игра #1026.2",
+      "name": "Игра #1025.3",
       "org": "Squiz",
       "event_date": "2026-11-19",
       "day": "19",
@@ -182,10 +194,10 @@
       "time": "20:00",
       "location": "Золберг",
       "price": "790 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/353672-igra-1026-2"
+      "event_url": "https://findquiz.ru/event/squiz/353672-igra-1025-3"
     },
     {
-      "name": "Игра #1025.3",
+      "name": "Игра #1026.3",
       "org": "Squiz",
       "event_date": "2026-11-20",
       "day": "20",
@@ -194,10 +206,10 @@
       "time": "19:00",
       "location": "Coin hall",
       "price": "790 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/353827-igra-1025-3"
+      "event_url": "https://findquiz.ru/event/squiz/353827-igra-1026-3"
     },
     {
-      "name": "Игра #1027.1",
+      "name": "Игра #1028.1",
       "org": "Squiz",
       "event_date": "2026-11-22",
       "day": "22",
@@ -206,10 +218,10 @@
       "time": "17:00",
       "location": "Золберг",
       "price": "790 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/354448-igra-1027-1"
+      "event_url": "https://findquiz.ru/event/squiz/354448-igra-1028-1"
     },
     {
-      "name": "Игра #1028.1",
+      "name": "Игра #1027.2",
       "org": "Squiz",
       "event_date": "2026-11-24",
       "day": "24",
@@ -218,10 +230,10 @@
       "time": "20:00",
       "location": "Незагорами (быв. Баран в Казан)",
       "price": "790 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/354769-igra-1028-1"
+      "event_url": "https://findquiz.ru/event/squiz/354769-igra-1027-2"
     },
     {
-      "name": "Игра #1027.2",
+      "name": "Игра #1028.2",
       "org": "Squiz",
       "event_date": "2026-11-25",
       "day": "25",
@@ -230,7 +242,7 @@
       "time": "20:00",
       "location": "Summer Punch",
       "price": "790 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/354964-igra-1027-2"
+      "event_url": "https://findquiz.ru/event/squiz/354964-igra-1028-2"
     },
     {
       "name": "Видеоигры (80 вопросов)",
@@ -257,7 +269,7 @@
       "event_url": "https://findquiz.ru/event/udar-golovoj-msk/353399-klassicheskiy-tur"
     },
     {
-      "name": "Игра #1028.2",
+      "name": "Игра #1027.3",
       "org": "Squiz",
       "event_date": "2026-11-26",
       "day": "26",
@@ -266,10 +278,10 @@
       "time": "20:00",
       "location": "Лига Пап",
       "price": "790 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/355218-igra-1028-2"
+      "event_url": "https://findquiz.ru/event/squiz/355218-igra-1027-3"
     },
     {
-      "name": "Игра #1027.3",
+      "name": "Игра #1028.3",
       "org": "Squiz",
       "event_date": "2026-11-27",
       "day": "27",
@@ -278,7 +290,7 @@
       "time": "19:00",
       "location": "Coin hall",
       "price": "790 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/355474-igra-1027-3"
+      "event_url": "https://findquiz.ru/event/squiz/355474-igra-1028-3"
     },
     {
       "name": "18 #58.1",
@@ -291,6 +303,30 @@
       "location": "Резиденция",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/355473-18-58-1"
+    },
+    {
+      "name": "Игра #1029.1",
+      "org": "Squiz",
+      "event_date": "2026-11-28",
+      "day": "28",
+      "weekday": "СБ",
+      "month": "ноября",
+      "time": "20:00",
+      "location": "Золберг",
+      "price": "790 руб./чел.",
+      "event_url": "https://findquiz.ru/event/squiz/355713-igra-1029-1"
+    },
+    {
+      "name": "Игра #1029.2",
+      "org": "Squiz",
+      "event_date": "2026-11-30",
+      "day": "30",
+      "weekday": "ПН",
+      "month": "ноября",
+      "time": "20:00",
+      "location": "KETCH UP",
+      "price": "790 руб./чел.",
+      "event_url": "https://findquiz.ru/event/squiz/355748-igra-1029-2"
     }
   ]
 }

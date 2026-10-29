@@ -1,21 +1,9 @@
 {
   "ok": true,
   "source": "https://findquiz.ru/category/sport",
-  "generated_at": "2026-10-28T13:32:43.934091+00:00",
+  "generated_at": "2026-10-29T13:43:43.903987+00:00",
   "count": 27,
   "events": [
-    {
-      "name": "Классический тур",
-      "org": "Футбольный квиз Удар головой",
-      "event_date": "2026-10-28",
-      "day": "28",
-      "weekday": "СР",
-      "month": "октября",
-      "time": "20:00",
-      "location": "0,5 промилле",
-      "price": "700 руб./чел.",
-      "event_url": "https://findquiz.ru/event/udar-golovoj-msk/349357-klassicheskiy-tur"
-    },
     {
       "name": "ВИДЕОИГРЫ",
       "org": "Теория большого квиза",
@@ -315,6 +303,18 @@
       "location": "Золберг",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/355713-igra-1029-1"
+    },
+    {
+      "name": "Игра #1030.1",
+      "org": "Squiz",
+      "event_date": "2026-11-29",
+      "day": "29",
+      "weekday": "ВС",
+      "month": "ноября",
+      "time": "16:00",
+      "location": "KETCH UP",
+      "price": "790 руб./чел.",
+      "event_url": "https://findquiz.ru/event/squiz/355976-igra-1030-1"
     },
     {
       "name": "Игра #1029.2",

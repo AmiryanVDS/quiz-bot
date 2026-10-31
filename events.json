@@ -1,7 +1,7 @@
 {
   "ok": true,
   "source": "https://findquiz.ru/category/sport",
-  "generated_at": "2026-10-30T13:35:11.931684+00:00",
+  "generated_at": "2026-10-31T13:05:09.558313+00:00",
   "count": 54,
   "events": [
     {
@@ -432,7 +432,7 @@
       "weekday": "ПН",
       "month": "декабря",
       "time": "20:00",
-      "location": "KETCH UP",
+      "location": "Золберг",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/356253-igra-1032-2"
     },
@@ -480,7 +480,7 @@
       "weekday": "ПТ",
       "month": "декабря",
       "time": "22:00",
-      "location": "Olimpbet Lounge",
+      "location": "Лига Пап",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/356290-18-58-2"
     },
@@ -551,8 +551,8 @@
       "day": "19",
       "weekday": "СБ",
       "month": "декабря",
-      "time": "20:00",
-      "location": "Liberty",
+      "time": "16:00",
+      "location": "Coin hall",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/356231-igra-1035-1"
     },

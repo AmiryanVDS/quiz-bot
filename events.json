@@ -1,21 +1,9 @@
 {
   "ok": true,
   "source": "https://findquiz.ru/category/sport",
-  "generated_at": "2026-10-31T13:05:09.558313+00:00",
-  "count": 54,
+  "generated_at": "2026-11-01T13:47:12.305636+00:00",
+  "count": 53,
   "events": [
-    {
-      "name": "ВИДЕОИГРЫ",
-      "org": "Теория большого квиза",
-      "event_date": "2026-10-31",
-      "day": "31",
-      "weekday": "СБ",
-      "month": "октября",
-      "time": "19:00",
-      "location": "Old Jack Pub",
-      "price": "800 руб./чел.",
-      "event_url": "https://findquiz.ru/event/bigquiz-msk/353313-videoigry"
-    },
     {
       "name": "Игра #1021.2",
       "org": "Squiz",

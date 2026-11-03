@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - update_events.py
+      - telegram_events.py
       - .github/workflows/update-events.yml
   schedule:
     # 09:45 Moscow time (UTC+3), every day.
@@ -30,7 +31,7 @@ jobs:
       - name: Install parser dependencies
         run: pip install requests==2.31.0 beautifulsoup4==4.12.2
 
-      - name: Fetch FindQuiz schedule
+      - name: Fetch quiz schedules
         run: python update_events.py
 
       - name: Commit updated JSON

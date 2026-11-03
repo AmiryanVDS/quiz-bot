@@ -3,10 +3,13 @@
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import requests
 import urllib3
 from bs4 import BeautifulSoup
+
+from telegram_events import CHANNELS, event_key, fetch_channel_events
 
 
 SPORT_URL = "https://findquiz.ru/category/sport"
@@ -142,10 +145,42 @@ def fetch_events() -> list[dict]:
 
 
 def main() -> None:
-    events = fetch_events()
+    today = datetime.now(ZoneInfo("Europe/Moscow")).date().isoformat()
+    try:
+        previous = json.loads(OUTPUT_FILE.read_text(encoding="utf-8")).get("events", [])
+    except (FileNotFoundError, ValueError, OSError):
+        previous = []
+
+    events = []
+    source_errors = {}
+    try:
+        events.extend(fetch_events())
+    except Exception as error:
+        source_errors["findquiz"] = str(error)
+        events.extend(event for event in previous if not event.get("source_channel"))
+
+    for channel in CHANNELS:
+        cached = [event for event in previous if event.get("source_channel") == channel]
+        try:
+            merged = {event_key(event): event for event in cached if event.get("event_date", "") >= today}
+            for event in fetch_channel_events(channel):
+                key = event_key(event)
+                if key not in merged or merged[key].get("event_url") == event.get("event_url"):
+                    merged[key] = event
+            events.extend(merged.values())
+        except Exception as error:
+            source_errors[channel] = str(error)
+            events.extend(cached)
+
+    events = [event for event in events if (event.get("event_date") or "") >= today]
+    if not events:
+        raise RuntimeError(f"No upcoming quiz events; source errors: {source_errors}")
+    events.sort(key=lambda event: (event["event_date"], event.get("time") or ""))
     payload = {
         "ok": True,
         "source": SPORT_URL,
+        "sources": [SPORT_URL, *[f"https://t.me/s/{channel}" for channel in CHANNELS]],
+        "source_errors": source_errors,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "count": len(events),
         "events": events,

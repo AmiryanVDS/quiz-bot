@@ -1,8 +1,14 @@
 {
   "ok": true,
   "source": "https://findquiz.ru/category/sport",
-  "generated_at": "2026-11-01T13:47:12.305636+00:00",
-  "count": 53,
+  "sources": [
+    "https://findquiz.ru/category/sport",
+    "https://t.me/s/simple_quiz",
+    "https://t.me/s/quizplusmsk"
+  ],
+  "source_errors": {},
+  "generated_at": "2026-11-03T11:06:14.752826+00:00",
+  "count": 54,
   "events": [
     {
       "name": "Игра #1021.2",
@@ -13,7 +19,7 @@
       "month": "ноября",
       "time": "20:00",
       "location": "KETCH UP",
-      "price": "790 руб./чел.",
+      "price": "900 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353035-igra-1021-2"
     },
     {
@@ -51,6 +57,19 @@
       "location": "KETCH UP",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353039-igra-1024-1"
+    },
+    {
+      "name": "Квиз Плюс — КЧАУ",
+      "org": "Квиз Плюс",
+      "event_date": "2026-11-09",
+      "day": "09",
+      "weekday": "ПН",
+      "month": "ноября",
+      "time": "19:30",
+      "location": "Chesterfield | Новый Арбат, 19",
+      "price": "1000 руб./чел.",
+      "event_url": "https://t.me/quizplusmsk/5280",
+      "source_channel": "quizplusmsk"
     },
     {
       "name": "Игра #1023.2",

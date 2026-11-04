@@ -7,33 +7,9 @@
     "https://t.me/s/quizplusmsk"
   ],
   "source_errors": {},
-  "generated_at": "2026-11-03T14:40:07.733630+00:00",
-  "count": 54,
+  "generated_at": "2026-11-04T14:52:37.231319+00:00",
+  "count": 53,
   "events": [
-    {
-      "name": "Игра #1021.2",
-      "org": "Squiz",
-      "event_date": "2026-11-03",
-      "day": "03",
-      "weekday": "ВТ",
-      "month": "ноября",
-      "time": "20:00",
-      "location": "KETCH UP",
-      "price": "900 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/353035-igra-1021-2"
-    },
-    {
-      "name": "РОК И ВИДЕОИГРЫ",
-      "org": "Теория большого квиза",
-      "event_date": "2026-11-03",
-      "day": "03",
-      "weekday": "ВТ",
-      "month": "ноября",
-      "time": "20:00",
-      "location": "Old Jack Pub",
-      "price": "800 руб./чел.",
-      "event_url": "https://findquiz.ru/event/bigquiz-msk/354954-rok-i-videoigry"
-    },
     {
       "name": "КМС (ПОВТОР ОТ 12 ОКТЯБРЯ)",
       "org": "BUBO-КВИЗ",
@@ -166,6 +142,19 @@
       "location": "KETCH UP",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/355747-igra-1026-1"
+    },
+    {
+      "name": "Ответная игра",
+      "org": "Ответная игра",
+      "event_date": "2026-11-16",
+      "day": "16",
+      "weekday": "ПН",
+      "month": "ноября",
+      "time": "20:00",
+      "location": "Лига Пап",
+      "price": "800 руб./чел.",
+      "event_url": "https://t.me/simple_quiz/768",
+      "source_channel": "simple_quiz"
     },
     {
       "name": "Игра #1025.2",
@@ -355,7 +344,7 @@
       "weekday": "ПН",
       "month": "ноября",
       "time": "20:00",
-      "location": "KETCH UP",
+      "location": "Лига Пап",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/355748-igra-1029-2"
     },
@@ -523,7 +512,7 @@
       "weekday": "ВТ",
       "month": "декабря",
       "time": "20:00",
-      "location": "KETCH UP",
+      "location": "Золберг",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/356272-igra-1034-2"
     },

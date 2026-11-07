@@ -7,21 +7,9 @@
     "https://t.me/s/quizplusmsk"
   ],
   "source_errors": {},
-  "generated_at": "2026-11-06T14:37:21.058344+00:00",
-  "count": 53,
+  "generated_at": "2026-11-07T13:33:46.513724+00:00",
+  "count": 52,
   "events": [
-    {
-      "name": "КМС (ПОВТОР ОТ 12 ОКТЯБРЯ)",
-      "org": "BUBO-КВИЗ",
-      "event_date": "2026-11-06",
-      "day": "06",
-      "weekday": "ПТ",
-      "month": "ноября",
-      "time": "20:00",
-      "location": "OldSchool Pub Маяковская",
-      "price": "800 руб./чел.",
-      "event_url": "https://findquiz.ru/event/bubo-quiz-msk/354313-kms-povtor-ot-12-oktyabrya"
-    },
     {
       "name": "Игра #1024.1",
       "org": "Squiz",

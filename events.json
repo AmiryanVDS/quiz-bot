@@ -4,25 +4,13 @@
   "sources": [
     "https://findquiz.ru/category/sport",
     "https://t.me/s/simple_quiz",
-    "https://t.me/s/quizplusmsk"
+    "https://t.me/s/quizplusmsk",
+    "https://t.me/s/quizpubrangers"
   ],
   "source_errors": {},
-  "generated_at": "2026-11-09T16:52:09.338587+00:00",
+  "generated_at": "2026-11-10T13:22:44.620009+00:00",
   "count": 51,
   "events": [
-    {
-      "name": "Квиз Плюс — КЧАУ",
-      "org": "Квиз Плюс",
-      "event_date": "2026-11-09",
-      "day": "09",
-      "weekday": "ПН",
-      "month": "ноября",
-      "time": "19:30",
-      "location": "Chesterfield | Новый Арбат, 19",
-      "price": "1000 руб./чел.",
-      "event_url": "https://t.me/quizplusmsk/5280",
-      "source_channel": "quizplusmsk"
-    },
     {
       "name": "Игра #1023.2",
       "org": "Squiz",
@@ -32,7 +20,7 @@
       "month": "ноября",
       "time": "20:00",
       "location": "KETCH UP",
-      "price": "790 руб./чел.",
+      "price": "900 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353235-igra-1023-2"
     },
     {
@@ -179,6 +167,19 @@
       "location": "Coin hall",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353827-igra-1026-3"
+    },
+    {
+      "name": "Quiz Pub Rangers",
+      "org": "Quiz Pub Rangers",
+      "event_date": "2026-11-21",
+      "day": "21",
+      "weekday": "СБ",
+      "month": "ноября",
+      "time": "16:30",
+      "location": "Suckin' Diesel Pub",
+      "price": "500 руб./чел. (300 руб. в клубной джерси)",
+      "event_url": "https://t.me/quizpubrangers/226",
+      "source_channel": "quizpubrangers"
     },
     {
       "name": "Игра #1027.1",

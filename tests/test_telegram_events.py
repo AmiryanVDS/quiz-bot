@@ -24,6 +24,27 @@ class Response:
 
 
 class TelegramEventsTests(unittest.TestCase):
+    def test_quiz_pub_rangers_football_game_and_jersey_price(self):
+        page = post(
+            "quizpubrangers", 226, "2026-11-07T05:45:16+00:00",
+            "🎄 Долгожданный футбольный квиз уже скоро!\n"
+            "📅 21 ноября 2026 (суббота)\n"
+            "🕓 Начало — 16:30, сбор гостей с 16:00\n"
+            "📍 Suckin' Diesel Pub\n"
+            "🎟 Вход: 500₽ без джерси / 300₽ в клубной джерси",
+        ) + post(
+            "quizpubrangers", 237, "2026-11-10T06:41:50+00:00",
+            "Призы вручим на квизе 21 ноября. До встречи!",
+        )
+        with patch("telegram_events.requests.get", return_value=Response(page)):
+            events = fetch_channel_events("quizpubrangers", date(2026, 11, 10))
+        self.assertEqual(len(events), 1)
+        self.assertEqual(events[0]["event_date"], "2026-11-21")
+        self.assertEqual(events[0]["time"], "16:30")
+        self.assertEqual(events[0]["location"], "Suckin' Diesel Pub")
+        self.assertEqual(events[0]["price"], "500 руб./чел. (300 руб. в клубной джерси)")
+        self.assertEqual(events[0]["event_url"], "https://t.me/quizpubrangers/226")
+
     def test_full_announcement_beats_discount_reminder(self):
         page = post(
             "quizplusmsk", 5280, "2026-10-29T18:18:51+00:00",

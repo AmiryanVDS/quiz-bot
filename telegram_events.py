@@ -11,6 +11,7 @@ from bs4 import BeautifulSoup
 CHANNELS = {
     "simple_quiz": "Ответная игра",
     "quizplusmsk": "Квиз Плюс",
+    "quizpubrangers": "Quiz Pub Rangers",
 }
 MOSCOW = ZoneInfo("Europe/Moscow")
 MONTHS = {
@@ -75,6 +76,17 @@ def _location(lines: list[str]) -> str | None:
 
 
 def _price(text: str) -> str:
+    jersey_price = re.search(
+        r"\bвход\s*:\s*(\d+)\s*₽\s*без\s+джерси\s*/\s*"
+        r"(\d+)\s*₽\s*в\s+клубной\s+джерси",
+        text,
+        re.I,
+    )
+    if jersey_price:
+        return (
+            f"{jersey_price.group(1)} руб./чел. "
+            f"({jersey_price.group(2)} руб. в клубной джерси)"
+        )
     for pattern in PRICE_PATTERNS:
         match = pattern.search(text)
         if match:

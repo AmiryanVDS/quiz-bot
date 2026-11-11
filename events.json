@@ -8,33 +8,9 @@
     "https://t.me/s/quizpubrangers"
   ],
   "source_errors": {},
-  "generated_at": "2026-11-10T15:14:26.573158+00:00",
-  "count": 51,
+  "generated_at": "2026-11-11T14:42:52.006113+00:00",
+  "count": 49,
   "events": [
-    {
-      "name": "Игра #1023.2",
-      "org": "Squiz",
-      "event_date": "2026-11-10",
-      "day": "10",
-      "weekday": "ВТ",
-      "month": "ноября",
-      "time": "20:00",
-      "location": "KETCH UP",
-      "price": "900 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/353235-igra-1023-2"
-    },
-    {
-      "name": "ВИДЕОИГРЫ",
-      "org": "Теория большого квиза",
-      "event_date": "2026-11-10",
-      "day": "10",
-      "weekday": "ВТ",
-      "month": "ноября",
-      "time": "20:00",
-      "location": "Old Jack Pub",
-      "price": "800 руб./чел.",
-      "event_url": "https://findquiz.ru/event/bigquiz-msk/354963-videoigry"
-    },
     {
       "name": "Игра #1024.2",
       "org": "Squiz",
@@ -44,7 +20,7 @@
       "month": "ноября",
       "time": "20:00",
       "location": "Summer Punch",
-      "price": "790 руб./чел.",
+      "price": "900 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353233-igra-1024-2"
     },
     {

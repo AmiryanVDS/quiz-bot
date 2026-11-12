@@ -8,33 +8,9 @@
     "https://t.me/s/quizpubrangers"
   ],
   "source_errors": {},
-  "generated_at": "2026-11-11T14:42:52.006113+00:00",
+  "generated_at": "2026-11-12T15:36:21.006077+00:00",
   "count": 49,
   "events": [
-    {
-      "name": "Игра #1024.2",
-      "org": "Squiz",
-      "event_date": "2026-11-11",
-      "day": "11",
-      "weekday": "СР",
-      "month": "ноября",
-      "time": "20:00",
-      "location": "Summer Punch",
-      "price": "900 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/353233-igra-1024-2"
-    },
-    {
-      "name": "Тур к дню рожедния квиза",
-      "org": "Футбольный квиз Удар головой",
-      "event_date": "2026-11-11",
-      "day": "11",
-      "weekday": "СР",
-      "month": "ноября",
-      "time": "20:00",
-      "location": "0,5 промилле",
-      "price": "700 руб./чел.",
-      "event_url": "https://findquiz.ru/event/udar-golovoj-msk/353398-tur-k-dnyu-rozhedniya-kviza"
-    },
     {
       "name": "Игра #1023.3",
       "org": "Squiz",
@@ -410,6 +386,18 @@
       "event_url": "https://findquiz.ru/event/squiz/356244-igra-1032-3"
     },
     {
+      "name": "Классический тур",
+      "org": "Футбольный квиз Удар головой",
+      "event_date": "2026-12-09",
+      "day": "09",
+      "weekday": "СР",
+      "month": "декабря",
+      "time": "20:00",
+      "location": "0,5 промилле",
+      "price": "700 руб./чел.",
+      "event_url": "https://findquiz.ru/event/udar-golovoj-msk/357622-klassicheskiy-tur"
+    },
+    {
       "name": "Игра #1033.1",
       "org": "Squiz",
       "event_date": "2026-12-10",
@@ -480,6 +468,18 @@
       "location": "KETCH UP",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/356252-igra-1033-3"
+    },
+    {
+      "name": "Финал сезона",
+      "org": "Футбольный квиз Удар головой",
+      "event_date": "2026-12-16",
+      "day": "16",
+      "weekday": "СР",
+      "month": "декабря",
+      "time": "20:00",
+      "location": "0,5 промилле",
+      "price": "700 руб./чел.",
+      "event_url": "https://findquiz.ru/event/udar-golovoj-msk/357623-final-sezona"
     },
     {
       "name": "Игра #1034.3",

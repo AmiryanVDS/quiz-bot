@@ -8,7 +8,7 @@
     "https://t.me/s/quizpubrangers"
   ],
   "source_errors": {},
-  "generated_at": "2026-11-12T15:36:21.006077+00:00",
+  "generated_at": "2026-11-13T14:55:19.962734+00:00",
   "count": 49,
   "events": [
     {
@@ -20,7 +20,7 @@
       "month": "ноября",
       "time": "19:00",
       "location": "Coin hall",
-      "price": "790 руб./чел.",
+      "price": "900 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353234-igra-1023-3"
     },
     {
@@ -332,8 +332,8 @@
       "day": "05",
       "weekday": "СБ",
       "month": "декабря",
-      "time": "20:00",
-      "location": "Liberty",
+      "time": "19:00",
+      "location": "Фудхолл Дружба",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/356233-igra-1032-1"
     },
@@ -506,6 +506,18 @@
       "event_url": "https://findquiz.ru/event/squiz/356231-igra-1035-1"
     },
     {
+      "name": "Игра #1037.1",
+      "org": "Squiz",
+      "event_date": "2026-12-19",
+      "day": "19",
+      "weekday": "СБ",
+      "month": "декабря",
+      "time": "19:00",
+      "location": "Фудхолл Дружба",
+      "price": "790 руб./чел.",
+      "event_url": "https://findquiz.ru/event/squiz/356238-igra-1037-1"
+    },
+    {
       "name": "Игра #1036.1",
       "org": "Squiz",
       "event_date": "2026-12-20",
@@ -564,18 +576,6 @@
       "location": "Золберг",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/356248-igra-1036-3"
-    },
-    {
-      "name": "Игра #1037.1",
-      "org": "Squiz",
-      "event_date": "2026-12-26",
-      "day": "26",
-      "weekday": "СБ",
-      "month": "декабря",
-      "time": "16:00",
-      "location": "Coin hall",
-      "price": "790 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/356238-igra-1037-1"
     },
     {
       "name": "Игра #1038.1",

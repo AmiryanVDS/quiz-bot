@@ -8,33 +8,9 @@
     "https://t.me/s/quizpubrangers"
   ],
   "source_errors": {},
-  "generated_at": "2026-11-13T14:55:19.962734+00:00",
-  "count": 49,
+  "generated_at": "2026-11-14T13:47:47.158082+00:00",
+  "count": 47,
   "events": [
-    {
-      "name": "Игра #1023.3",
-      "org": "Squiz",
-      "event_date": "2026-11-13",
-      "day": "13",
-      "weekday": "ПТ",
-      "month": "ноября",
-      "time": "19:00",
-      "location": "Coin hall",
-      "price": "900 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/353234-igra-1023-3"
-    },
-    {
-      "name": "Игра #1024.3",
-      "org": "Squiz",
-      "event_date": "2026-11-14",
-      "day": "14",
-      "weekday": "СБ",
-      "month": "ноября",
-      "time": "16:00",
-      "location": "Coin hall",
-      "price": "790 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/353338-igra-1024-3"
-    },
     {
       "name": "Игра #1025.1",
       "org": "Squiz",
@@ -189,7 +165,7 @@
       "weekday": "СР",
       "month": "ноября",
       "time": "20:00",
-      "location": "Буква Ю (ex. ЗИЧ)",
+      "location": "Red Lion",
       "price": "800 руб./чел.",
       "event_url": "https://findquiz.ru/event/quizovarnya/353484-videoigry-80-voprosov"
     },

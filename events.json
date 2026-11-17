@@ -8,34 +8,9 @@
     "https://t.me/s/quizpubrangers"
   ],
   "source_errors": {},
-  "generated_at": "2026-11-16T16:26:02.781401+00:00",
-  "count": 47,
+  "generated_at": "2026-11-17T16:29:18.171451+00:00",
+  "count": 45,
   "events": [
-    {
-      "name": "Игра #1026.1",
-      "org": "Squiz",
-      "event_date": "2026-11-16",
-      "day": "16",
-      "weekday": "ПН",
-      "month": "ноября",
-      "time": "20:00",
-      "location": "KETCH UP",
-      "price": "900 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/355747-igra-1026-1"
-    },
-    {
-      "name": "Ответная игра",
-      "org": "Ответная игра",
-      "event_date": "2026-11-16",
-      "day": "16",
-      "weekday": "ПН",
-      "month": "ноября",
-      "time": "20:00",
-      "location": "Лига Пап",
-      "price": "800 руб./чел.",
-      "event_url": "https://t.me/simple_quiz/768",
-      "source_channel": "simple_quiz"
-    },
     {
       "name": "Игра #1025.2",
       "org": "Squiz",
@@ -45,7 +20,7 @@
       "month": "ноября",
       "time": "20:00",
       "location": "Лига Пап",
-      "price": "790 руб./чел.",
+      "price": "900 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353518-igra-1025-2"
     },
     {

@@ -8,33 +8,9 @@
     "https://t.me/s/quizpubrangers"
   ],
   "source_errors": {},
-  "generated_at": "2026-11-17T16:29:18.171451+00:00",
-  "count": 45,
+  "generated_at": "2026-11-18T15:58:24.771431+00:00",
+  "count": 43,
   "events": [
-    {
-      "name": "Игра #1025.2",
-      "org": "Squiz",
-      "event_date": "2026-11-17",
-      "day": "17",
-      "weekday": "ВТ",
-      "month": "ноября",
-      "time": "20:00",
-      "location": "Лига Пап",
-      "price": "900 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/353518-igra-1025-2"
-    },
-    {
-      "name": "Музыкальное Лото у Жукова!",
-      "org": "Музыкальное Лото Boom",
-      "event_date": "2026-11-17",
-      "day": "17",
-      "weekday": "ВТ",
-      "month": "ноября",
-      "time": "20:00",
-      "location": "Караоке-бар Евгенич",
-      "price": "800 руб./чел.",
-      "event_url": "https://findquiz.ru/event/muzicloto-boom/356320-muzykalnoe-loto-u-zhukova"
-    },
     {
       "name": "Игра #1026.2",
       "org": "Squiz",
@@ -44,7 +20,7 @@
       "month": "ноября",
       "time": "20:00",
       "location": "Summer Punch",
-      "price": "790 руб./чел.",
+      "price": "900 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353607-igra-1026-2"
     },
     {

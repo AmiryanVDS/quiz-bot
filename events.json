@@ -8,21 +8,9 @@
     "https://t.me/s/quizpubrangers"
   ],
   "source_errors": {},
-  "generated_at": "2026-11-18T15:58:24.771431+00:00",
-  "count": 43,
+  "generated_at": "2026-11-19T16:04:08.467266+00:00",
+  "count": 44,
   "events": [
-    {
-      "name": "Игра #1026.2",
-      "org": "Squiz",
-      "event_date": "2026-11-18",
-      "day": "18",
-      "weekday": "СР",
-      "month": "ноября",
-      "time": "20:00",
-      "location": "Summer Punch",
-      "price": "900 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/353607-igra-1026-2"
-    },
     {
       "name": "Игра #1025.3",
       "org": "Squiz",
@@ -32,7 +20,7 @@
       "month": "ноября",
       "time": "20:00",
       "location": "Золберг",
-      "price": "790 руб./чел.",
+      "price": "900 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/353672-igra-1025-3"
     },
     {
@@ -301,6 +289,18 @@
       "event_url": "https://findquiz.ru/event/squiz/356275-igra-1031-3"
     },
     {
+      "name": "Спорт",
+      "org": "Brainboy",
+      "event_date": "2026-12-08",
+      "day": "08",
+      "weekday": "ВТ",
+      "month": "декабря",
+      "time": "20:00",
+      "location": "Liberty",
+      "price": "900 руб./чел.",
+      "event_url": "https://findquiz.ru/event/brainboy/358244-sport"
+    },
+    {
       "name": "Игра #1032.3",
       "org": "Squiz",
       "event_date": "2026-12-09",
@@ -467,6 +467,18 @@
       "location": "KETCH UP",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/356274-igra-1036-2"
+    },
+    {
+      "name": "Футбол",
+      "org": "Brainboy",
+      "event_date": "2026-12-22",
+      "day": "22",
+      "weekday": "ВТ",
+      "month": "декабря",
+      "time": "20:00",
+      "location": "Liberty",
+      "price": "500 руб./чел.",
+      "event_url": "https://findquiz.ru/event/brainboy/358245-futbol"
     },
     {
       "name": "Игра #1035.3",

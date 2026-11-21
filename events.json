@@ -8,21 +8,9 @@
     "https://t.me/s/quizpubrangers"
   ],
   "source_errors": {},
-  "generated_at": "2026-11-20T15:46:13.407908+00:00",
-  "count": 44,
+  "generated_at": "2026-11-21T14:56:31.713289+00:00",
+  "count": 43,
   "events": [
-    {
-      "name": "Игра #1026.3",
-      "org": "Squiz",
-      "event_date": "2026-11-20",
-      "day": "20",
-      "weekday": "ПТ",
-      "month": "ноября",
-      "time": "19:00",
-      "location": "Coin hall",
-      "price": "900 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/353827-igra-1026-3"
-    },
     {
       "name": "Quiz Pub Rangers",
       "org": "Quiz Pub Rangers",
@@ -45,7 +33,7 @@
       "month": "ноября",
       "time": "19:00",
       "location": "МазалТов",
-      "price": "790 руб./чел.",
+      "price": "900 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/356326-igra-1027-1"
     },
     {

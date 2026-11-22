@@ -8,46 +8,9 @@
     "https://t.me/s/quizpubrangers"
   ],
   "source_errors": {},
-  "generated_at": "2026-11-21T14:56:31.713289+00:00",
-  "count": 43,
+  "generated_at": "2026-11-22T14:54:18.516329+00:00",
+  "count": 40,
   "events": [
-    {
-      "name": "Quiz Pub Rangers",
-      "org": "Quiz Pub Rangers",
-      "event_date": "2026-11-21",
-      "day": "21",
-      "weekday": "СБ",
-      "month": "ноября",
-      "time": "16:30",
-      "location": "Suckin' Diesel Pub",
-      "price": "500 руб./чел. (300 руб. в клубной джерси)",
-      "event_url": "https://t.me/quizpubrangers/226",
-      "source_channel": "quizpubrangers"
-    },
-    {
-      "name": "Игра #1027.1",
-      "org": "Squiz",
-      "event_date": "2026-11-21",
-      "day": "21",
-      "weekday": "СБ",
-      "month": "ноября",
-      "time": "19:00",
-      "location": "МазалТов",
-      "price": "900 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/356326-igra-1027-1"
-    },
-    {
-      "name": "Игра #1028.1",
-      "org": "Squiz",
-      "event_date": "2026-11-22",
-      "day": "22",
-      "weekday": "ВС",
-      "month": "ноября",
-      "time": "17:00",
-      "location": "Золберг",
-      "price": "790 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/354448-igra-1028-1"
-    },
     {
       "name": "Игра #1027.2",
       "org": "Squiz",

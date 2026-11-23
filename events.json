@@ -7,8 +7,10 @@
     "https://t.me/s/quizplusmsk",
     "https://t.me/s/quizpubrangers"
   ],
-  "source_errors": {},
-  "generated_at": "2026-11-22T14:54:18.516329+00:00",
+  "source_errors": {
+    "findquiz": "FindQuiz returned no sports events"
+  },
+  "generated_at": "2026-11-23T18:44:59.762478+00:00",
   "count": 40,
   "events": [
     {

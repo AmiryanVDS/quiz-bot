@@ -7,24 +7,10 @@
     "https://t.me/s/quizplusmsk",
     "https://t.me/s/quizpubrangers"
   ],
-  "source_errors": {
-    "findquiz": "FindQuiz returned no sports events"
-  },
-  "generated_at": "2026-11-23T18:44:59.762478+00:00",
+  "source_errors": {},
+  "generated_at": "2026-11-24T18:20:02.752080+00:00",
   "count": 40,
   "events": [
-    {
-      "name": "Игра #1027.2",
-      "org": "Squiz",
-      "event_date": "2026-11-24",
-      "day": "24",
-      "weekday": "ВТ",
-      "month": "ноября",
-      "time": "20:00",
-      "location": "Незагорами (быв. Баран в Казан)",
-      "price": "790 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/354769-igra-1027-2"
-    },
     {
       "name": "Игра #1028.2",
       "org": "Squiz",
@@ -36,18 +22,6 @@
       "location": "Summer Punch",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/354964-igra-1028-2"
-    },
-    {
-      "name": "Видеоигры (80 вопросов)",
-      "org": "Квизоварня",
-      "event_date": "2026-11-25",
-      "day": "25",
-      "weekday": "СР",
-      "month": "ноября",
-      "time": "20:00",
-      "location": "Red Lion",
-      "price": "800 руб./чел.",
-      "event_url": "https://findquiz.ru/event/quizovarnya/353484-videoigry-80-voprosov"
     },
     {
       "name": "Классический тур",
@@ -218,6 +192,19 @@
       "event_url": "https://findquiz.ru/event/squiz/356253-igra-1032-2"
     },
     {
+      "name": "Ответная игра",
+      "org": "Ответная игра",
+      "event_date": "2026-12-07",
+      "day": "07",
+      "weekday": "ПН",
+      "month": "декабря",
+      "time": "20:00",
+      "location": "Лига Пап",
+      "price": "800 руб./чел.",
+      "event_url": "https://t.me/simple_quiz/774",
+      "source_channel": "simple_quiz"
+    },
+    {
       "name": "Игра #1031.3",
       "org": "Squiz",
       "event_date": "2026-12-08",
@@ -285,7 +272,7 @@
       "weekday": "ПТ",
       "month": "декабря",
       "time": "22:00",
-      "location": "Лига Пап",
+      "location": "Olimpbet Lounge",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/356290-18-58-2"
     },
@@ -312,6 +299,18 @@
       "location": "KETCH UP",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/356270-igra-1033-2"
+    },
+    {
+      "name": "МИРОВОЙ ФУТБОЛ",
+      "org": "Шейкер квиз",
+      "event_date": "2026-12-15",
+      "day": "15",
+      "weekday": "ВТ",
+      "month": "декабря",
+      "time": "20:00",
+      "location": "Temple Bar",
+      "price": "900 руб./чел.",
+      "event_url": "https://findquiz.ru/event/shaker-quiz/359367-mirovoy-futbol"
     },
     {
       "name": "Игра #1034.2",

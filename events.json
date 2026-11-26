@@ -8,21 +8,9 @@
     "https://t.me/s/quizpubrangers"
   ],
   "source_errors": {},
-  "generated_at": "2026-11-25T17:37:50.113148+00:00",
+  "generated_at": "2026-11-26T17:19:31.589315+00:00",
   "count": 39,
   "events": [
-    {
-      "name": "Игра #1027.3",
-      "org": "Squiz",
-      "event_date": "2026-11-26",
-      "day": "26",
-      "weekday": "ЧТ",
-      "month": "ноября",
-      "time": "20:00",
-      "location": "Лига Пап",
-      "price": "790 руб./чел.",
-      "event_url": "https://findquiz.ru/event/squiz/355218-igra-1027-3"
-    },
     {
       "name": "Игра #1028.3",
       "org": "Squiz",
@@ -166,6 +154,19 @@
       "location": "KETCH UP",
       "price": "790 руб./чел.",
       "event_url": "https://findquiz.ru/event/squiz/356277-igra-1031-2"
+    },
+    {
+      "name": "Квиз Плюс",
+      "org": "Квиз Плюс",
+      "event_date": "2026-12-07",
+      "day": "07",
+      "weekday": "ПН",
+      "month": "декабря",
+      "time": "19:30",
+      "location": "«Честерфилд», Новый Арбат, 19",
+      "price": "Цена не указана",
+      "event_url": "https://t.me/quizplusmsk/5401",
+      "source_channel": "quizplusmsk"
     },
     {
       "name": "Игра #1032.2",

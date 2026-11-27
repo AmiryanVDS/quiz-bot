@@ -7,9 +7,11 @@
     "https://t.me/s/quizplusmsk",
     "https://t.me/s/quizpubrangers"
   ],
-  "source_errors": {},
-  "generated_at": "2026-11-26T17:19:31.589315+00:00",
-  "count": 39,
+  "source_errors": {
+    "findquiz": "HTTPSConnectionPool(host='findquiz.ru', port=443): Read timed out."
+  },
+  "generated_at": "2026-11-27T16:59:31.682717+00:00",
+  "count": 40,
   "events": [
     {
       "name": "Игра #1028.3",
@@ -106,6 +108,19 @@
       "location": "Перелетный кабак / Flying Inn",
       "price": "700 руб./чел.",
       "event_url": "https://findquiz.ru/event/udar-golovoj-msk/359739-bolshoy-kviz-po-sportu"
+    },
+    {
+      "name": "Квиз Плюс",
+      "org": "Квиз Плюс",
+      "event_date": "2026-12-03",
+      "day": "03",
+      "weekday": "ЧТ",
+      "month": "декабря",
+      "time": "19:15",
+      "location": "AVULUS, Серебрянический переулок, 12, стр. 1",
+      "price": "Цена не указана",
+      "event_url": "https://t.me/quizplusmsk/5403",
+      "source_channel": "quizplusmsk"
     },
     {
       "name": "Игра #1030.3",
